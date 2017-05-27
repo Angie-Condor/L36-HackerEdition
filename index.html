@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Lección 36 - Hacker Edition!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div id="tarifa"class="none"></div>
+        <div class="col-sm-12 col-lg-12 bg-nav-btn">
+          <div class="col-sm-4 col-lg-4 center ">
+              <span class="glyphicon glyphicon-record white"></span>
+              <input type="text" class="form-control" id="punto-partida" placeholder="Ingresa tu punto de partida" aria-describedby="sizing-addon1">
+          </div>
+          <div class="col-sm-4 col-lg-4 center">
+              <i class="glyphicon glyphicon-send white"></i>
+              <input type="text" id="punto-destino" class="form-control" placeholder="Ingresa tu destino" aria-describedby="sizing-addon1">
+          </div>
+          <div class="col-sm-4 col-lg-4 center">
+            <button type="button" id="trazar-ruta" class="btn btn-default" name="button">Trazar Ruta</button>
+            <button type="button" id="buscar" class="btn btn-default" name="button">Encuéntrame</button>
+          </div>
+        </div>
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js" charset="utf-8"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChmQZmePImlDW9I8vayGL0DOHNGylyGB4&callback=initMap&libraries=places"
+      type="text/javascript"></script>
+    </script>
+  </body>
+</html>
